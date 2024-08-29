@@ -1,0 +1,203 @@
+@use "../global" as *;
+@use "../partials" as *;
+
+.categories {
+  &-inner {
+    .short-by {
+      .text {
+        color: $neutral-600;
+        font-family: $primaryfont;
+        font-size: size(16);
+        font-style: normal;
+        font-weight: 500;
+        line-height: size(24);
+      }
+
+      .nice-select {
+        background-color: transparent;
+        @include radius(4);
+        border: solid 1px $neutral-300;
+        box-sizing: border-box;
+        font-size: size(16);
+        font-family: $primaryfont;
+        color: $neutral-600;
+        font-weight: normal;
+        padding-left: 12px;
+        padding-right: 100px;
+        span {
+          font-family: $primaryfont;
+          color: $neutral-600;
+        }
+        .nice-select-dropdown {
+          width: 100%;
+        }
+      }
+    }
+    .categories-left {
+      .categories-title {
+        color: $neutral-900;
+        font-family: $primaryfont;
+        font-size: size(18);
+        font-weight: 600;
+        line-height: size(28);
+        margin-bottom: size(12);
+      }
+      .price-range {
+        @include radius(4);
+        background: $white;
+        padding: size(16);
+        .price-range-checkbox {
+          display: block;
+          position: relative;
+          padding-left: size(35);
+          margin-bottom: size(12);
+          &:last-child {
+            margin-bottom: size(0);
+          }
+          cursor: pointer;
+          color: $neutral-900;
+          font-family: $primaryfont;
+          font-size: size(16);
+          font-weight: 500;
+          line-height: size(24);
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+
+          input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+            &:checked ~ .checkmark {
+              background-color: $primary-color-base;
+            }
+            &:checked ~ .checkmark:after {
+              display: block;
+            }
+          }
+
+          .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: size(20);
+            width: size(20);
+            border: size(1) solid $neutral-300;
+            @include radius(3);
+            &::after {
+              content: "";
+              position: absolute;
+              display: none;
+              left: size(6);
+              top: size(1);
+              width: size(6);
+              height: size(12);
+              border: solid white;
+              border-width: size(0) size(3) size(3) size(0);
+              -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+              transform: rotate(45deg);
+            }
+          }
+          // &:hover input ~ .checkmark {
+          //   background-color: #ccc;
+          // }
+        }
+      }
+
+      .product-offer {
+        @include radius(4);
+        padding: size(20) 0;
+        margin-top: 30px;
+
+        .add-product {
+          background: $white;
+          display: flex;
+          // width: 261px;
+          // margin: auto;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: size(12);
+          .add-image {
+            width: size(180);
+            height: size(180);
+            flex-shrink: 0;
+          }
+          .add-title {
+            color: $black;
+            font-family: $DMfont;
+            font-size: size(28);
+            line-height: size(28);
+            margin-bottom: size(12);
+          }
+        }
+      }
+    }
+  }
+}
+
+.pagination-items {
+  display: flex;
+  justify-content: center;
+  margin: size(48) 0;
+  @include breakpoint(mobile576) {
+    justify-content: end;
+  }
+  .pagination-body {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    gap: size(2);
+    @include breakpoint(mobile576) {
+      gap: size(4);
+    }
+    .page-item {
+      @include radius(4);
+      .page-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: size(10);
+        width: size(40);
+        height: size(40);
+        font-size: size(18);
+        transition: all 0.35s ease-in-out;
+      }
+      transition: all 0.35s ease-in-out;
+      &:hover {
+        background: $primary-color-base;
+      }
+      &:hover .page-link {
+        color: $white;
+      }
+    }
+    .arrow-right,
+    .arrow-left {
+      background: $neutral-200;
+      transition: all 0.35s ease-in-out;
+      .page-link {
+        i {
+          font-size: size(18);
+          transition: all 0.35s ease-in-out;
+        }
+      }
+      &:hover {
+        background: $primary-color-base;
+      }
+      &:hover .page-link i {
+        color: $white;
+      }
+    }
+
+    .active {
+      background: $primary-color-base;
+      .page-link {
+        color: $white;
+      }
+    }
+  }
+}
