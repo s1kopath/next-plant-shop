@@ -1,5 +1,7 @@
-import Layout from "../components/Layout";
+import Layout from "@/components/Layout";
 import Link from "next/link";
+
+import ReviewSwiper from "@/components/ReviewSwiper";
 
 const HomePage = () => {
     return (
@@ -7,27 +9,27 @@ const HomePage = () => {
             <main>
                 {/* <!-- Hero section start --> */}
                 <section>
-                    <div class="hero-inner">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="hero-inner-content">
-                                        <h1 class="title">
+                    <div className="hero-inner">
+                        <div className="container">
+                            <div className="row">
+                                <div className="col-md-6">
+                                    <div className="hero-inner-content">
+                                        <h1 className="title">
                                             Green up Your Space into nature
                                         </h1>
-                                        <p class="details">
+                                        <p className="details">
                                             Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum.
                                         </p>
-                                        <div class="">
-                                            <Link href="/shop" class="primary-button">
+                                        <div className="">
+                                            <Link href="/shop" className="primary-button">
                                                 Shop Now
                                             </Link>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div className="col-md-6">
                                     <figure>
-                                        <img src="./assets/images/home/Banner Image.png" alt="Banner" />
+                                        <img src="/assets/images/home/Banner Image.png" alt="Banner" />
                                     </figure>
                                 </div>
                             </div>
@@ -38,76 +40,76 @@ const HomePage = () => {
 
                 {/* <!-- Category section start --> */}
                 <section>
-                    <div class="category-inner">
-                        <div class="container">
-                            <div class="row g-3 g-lg-5">
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                    <div className="category-inner">
+                        <div className="container">
+                            <div className="row g-3 g-lg-5">
+                                <div className="col-6 col-sm-4 col-md-3 col-lg-2">
                                     <Link href="./product-details.html">
-                                        <div class="category-inner-cart">
+                                        <div className="category-inner-cart">
                                             <figure>
-                                                <img class="category-img" src="./assets/images/home/Succulents.png" alt="img" />
+                                                <img className="category-img" src="/assets/images/home/Succulents.png" alt="img" />
                                             </figure>
-                                            <p class="category-name">
+                                            <p className="category-name">
                                                 Succulents
                                             </p>
                                         </div>
                                     </Link>
                                 </div>
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                                <div className="col-6 col-sm-4 col-md-3 col-lg-2">
                                     <Link href="./product-details.html">
-                                        <div class="category-inner-cart">
+                                        <div className="category-inner-cart">
                                             <figure>
-                                                <img class="category-img" src="./assets/images/home/Carnivorous.png" alt="img" />
+                                                <img className="category-img" src="/assets/images/home/Carnivorous.png" alt="img" />
                                             </figure>
-                                            <p class="category-name">
+                                            <p className="category-name">
                                                 Carnivorous
                                             </p>
                                         </div>
                                     </Link>
                                 </div>
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                                <div className="col-6 col-sm-4 col-md-3 col-lg-2">
                                     <Link href="./product-details.html">
-                                        <div class="category-inner-cart">
+                                        <div className="category-inner-cart">
                                             <figure>
-                                                <img class="category-img" src="./assets/images/home/Flowering Plants.png" alt="img" />
+                                                <img className="category-img" src="/assets/images/home/Flowering Plants.png" alt="img" />
                                             </figure>
-                                            <p class="category-name">
+                                            <p className="category-name">
                                                 Flowering Plants
                                             </p>
                                         </div>
                                     </Link>
                                 </div>
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                                <div className="col-6 col-sm-4 col-md-3 col-lg-2">
                                     <Link href="./product-details.html">
-                                        <div class="category-inner-cart">
+                                        <div className="category-inner-cart">
                                             <figure>
-                                                <img class="category-img" src="./assets/images/home/Foliage Plants.png" alt="img" />
+                                                <img className="category-img" src="/assets/images/home/Foliage Plants.png" alt="img" />
                                             </figure>
-                                            <p class="category-name">
+                                            <p className="category-name">
                                                 Foliage Plants
                                             </p>
                                         </div>
                                     </Link>
                                 </div>
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                                <div className="col-6 col-sm-4 col-md-3 col-lg-2">
                                     <Link href="./product-details.html">
-                                        <div class="category-inner-cart">
+                                        <div className="category-inner-cart">
                                             <figure>
-                                                <img class="category-img" src="./assets/images/home/Bonsai Plants.png" alt="img" />
+                                                <img className="category-img" src="/assets/images/home/Bonsai Plants.png" alt="img" />
                                             </figure>
-                                            <p class="category-name">
+                                            <p className="category-name">
                                                 Bonsai Plants
                                             </p>
                                         </div>
                                     </Link>
                                 </div>
-                                <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+                                <div className="col-6 col-sm-4 col-md-3 col-lg-2">
                                     <Link href="./product-details.html">
-                                        <div class="category-inner-cart">
+                                        <div className="category-inner-cart">
                                             <figure>
-                                                <img class="category-img" src="./assets/images/home/Herbs Plants.png" alt="img" />
+                                                <img className="category-img" src="/assets/images/home/Herbs Plants.png" alt="img" />
                                             </figure>
-                                            <p class="category-name">
+                                            <p className="category-name">
                                                 Herbs Plants
                                             </p>
                                         </div>
@@ -121,295 +123,295 @@ const HomePage = () => {
 
                 {/* <!-- Most Popular Product Start --> */}
                 <section>
-                    <div class="popularProduct">
-                        <div class="container">
-                            <div class="popularProduct-inner">
-                                <h1 class="popularProduct-inner-header">
+                    <div className="popularProduct">
+                        <div className="container">
+                            <div className="popularProduct-inner">
+                                <h1 className="popularProduct-inner-header">
                                     Most Popular Product
                                 </h1>
-                                <div class="popularProduct-inner-category">
-                                    <button class="popularProduct-inner-category-btn">
+                                <div className="popularProduct-inner-category">
+                                    <button className="popularProduct-inner-category-btn">
                                         Weeping Fig
                                     </button>
-                                    <button class="popularProduct-inner-category-btn">
+                                    <button className="popularProduct-inner-category-btn">
                                         Rubber Plant
                                     </button>
-                                    <button class="popularProduct-inner-category-btn">
+                                    <button className="popularProduct-inner-category-btn">
                                         Parlor Palm
                                     </button>
-                                    <button class="popularProduct-inner-category-btn">
+                                    <button className="popularProduct-inner-category-btn">
                                         Dragon Tree
-                                    </button><button class="popularProduct-inner-category-btn">
+                                    </button><button className="popularProduct-inner-category-btn">
                                         Lemon Lime
                                     </button>
                                 </div>
-                                <div class="row mt-5 g-4">
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <Link href="./product-details.html" class="d-block">
-                                            <div class="popularProduct-inner-cart">
-                                                <figure class="popularProduct-inner-cart-image">
-                                                    <img class="product-img" src="./assets/images/home/popularProduct-bg-1.png"
+                                <div className="row mt-5 g-4">
+                                    <div className="col-sm-6 col-md-4 col-lg-3">
+                                        <Link href="./product-details.html" className="d-block">
+                                            <div className="popularProduct-inner-cart">
+                                                <figure className="popularProduct-inner-cart-image">
+                                                    <img className="product-img" src="/assets/images/home/popularProduct-bg-1.png"
                                                         alt="popularProduct" />
-                                                    <div class="new">New</div>
+                                                    <div className="new">New</div>
 
-                                                    <div class="popularProduct-inner-cart-inner">
-                                                        <div class="popularProduct-inner-cart-hover">
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/shopping.png" alt="shopping" />
+                                                    <div className="popularProduct-inner-cart-inner">
+                                                        <div className="popularProduct-inner-cart-hover">
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/shopping.png" alt="shopping" />
                                                             </figure>
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/favourite.png" alt="favourite" />
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/favourite.png" alt="favourite" />
                                                             </figure>
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/View.png" alt="View" />
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/View.png" alt="View" />
                                                             </figure>
                                                         </div>
                                                     </div>
                                                 </figure>
 
-                                                <div class="popularProduct-inner-cart-content">
-                                                    <div class="title line-clamp1">Petlas MultiAction PT565</div>
-                                                    <div class="innerPrice">
-                                                        <p class="price">$20</p>
-                                                        <p class="discountPrice">$25</p>
+                                                <div className="popularProduct-inner-cart-content">
+                                                    <div className="title line-clamp1">Petlas MultiAction PT565</div>
+                                                    <div className="innerPrice">
+                                                        <p className="price">$20</p>
+                                                        <p className="discountPrice">$25</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </Link>
                                     </div>
 
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <Link href="./product-details.html" class="d-block">
-                                            <div class="popularProduct-inner-cart">
-                                                <figure class="popularProduct-inner-cart-image">
-                                                    <img class="product-img" src="./assets/images/home/popularProduct-bg-2.png"
+                                    <div className="col-sm-6 col-md-4 col-lg-3">
+                                        <Link href="./product-details.html" className="d-block">
+                                            <div className="popularProduct-inner-cart">
+                                                <figure className="popularProduct-inner-cart-image">
+                                                    <img className="product-img" src="/assets/images/home/popularProduct-bg-2.png"
                                                         alt="popularProduct" />
-                                                    <div class="new">New</div>
+                                                    <div className="new">New</div>
 
-                                                    <div class="popularProduct-inner-cart-inner">
-                                                        <div class="popularProduct-inner-cart-hover">
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/shopping.png" alt="shopping" />
+                                                    <div className="popularProduct-inner-cart-inner">
+                                                        <div className="popularProduct-inner-cart-hover">
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/shopping.png" alt="shopping" />
                                                             </figure>
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/favourite.png" alt="favourite" />
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/favourite.png" alt="favourite" />
                                                             </figure>
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/View.png" alt="View" />
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/View.png" alt="View" />
                                                             </figure>
                                                         </div>
                                                     </div>
                                                 </figure>
 
-                                                <div class="popularProduct-inner-cart-content">
-                                                    <div class="title line-clamp1">Petlas MultiAction PT565</div>
-                                                    <div class="innerPrice">
-                                                        <p class="price">$20</p>
-                                                        <p class="discountPrice">$25</p>
+                                                <div className="popularProduct-inner-cart-content">
+                                                    <div className="title line-clamp1">Petlas MultiAction PT565</div>
+                                                    <div className="innerPrice">
+                                                        <p className="price">$20</p>
+                                                        <p className="discountPrice">$25</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </Link>
                                     </div>
 
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <Link href="./product-details.html" class="d-block">
-                                            <div class="popularProduct-inner-cart">
-                                                <figure class="popularProduct-inner-cart-image">
-                                                    <img class="product-img" src="./assets/images/home/popularProduct-bg-3.png"
+                                    <div className="col-sm-6 col-md-4 col-lg-3">
+                                        <Link href="./product-details.html" className="d-block">
+                                            <div className="popularProduct-inner-cart">
+                                                <figure className="popularProduct-inner-cart-image">
+                                                    <img className="product-img" src="/assets/images/home/popularProduct-bg-3.png"
                                                         alt="popularProduct" />
-                                                    <div class="new">New</div>
+                                                    <div className="new">New</div>
 
-                                                    <div class="popularProduct-inner-cart-inner">
-                                                        <div class="popularProduct-inner-cart-hover">
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/shopping.png" alt="shopping" />
+                                                    <div className="popularProduct-inner-cart-inner">
+                                                        <div className="popularProduct-inner-cart-hover">
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/shopping.png" alt="shopping" />
                                                             </figure>
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/favourite.png" alt="favourite" />
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/favourite.png" alt="favourite" />
                                                             </figure>
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/View.png" alt="View" />
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/View.png" alt="View" />
                                                             </figure>
                                                         </div>
                                                     </div>
                                                 </figure>
 
-                                                <div class="popularProduct-inner-cart-content">
-                                                    <div class="title line-clamp1">Petlas MultiAction PT565</div>
-                                                    <div class="innerPrice">
-                                                        <p class="price">$20</p>
-                                                        <p class="discountPrice">$25</p>
+                                                <div className="popularProduct-inner-cart-content">
+                                                    <div className="title line-clamp1">Petlas MultiAction PT565</div>
+                                                    <div className="innerPrice">
+                                                        <p className="price">$20</p>
+                                                        <p className="discountPrice">$25</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </Link>
                                     </div>
 
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <Link href="./product-details.html" class="d-block">
-                                            <div class="popularProduct-inner-cart">
-                                                <figure class="popularProduct-inner-cart-image">
-                                                    <img class="product-img" src="./assets/images/home/popularProduct-bg-4.png"
+                                    <div className="col-sm-6 col-md-4 col-lg-3">
+                                        <Link href="./product-details.html" className="d-block">
+                                            <div className="popularProduct-inner-cart">
+                                                <figure className="popularProduct-inner-cart-image">
+                                                    <img className="product-img" src="/assets/images/home/popularProduct-bg-4.png"
                                                         alt="popularProduct" />
-                                                    <div class="new">New</div>
+                                                    <div className="new">New</div>
 
-                                                    <div class="popularProduct-inner-cart-inner">
-                                                        <div class="popularProduct-inner-cart-hover">
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/shopping.png" alt="shopping" />
+                                                    <div className="popularProduct-inner-cart-inner">
+                                                        <div className="popularProduct-inner-cart-hover">
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/shopping.png" alt="shopping" />
                                                             </figure>
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/favourite.png" alt="favourite" />
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/favourite.png" alt="favourite" />
                                                             </figure>
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/View.png" alt="View" />
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/View.png" alt="View" />
                                                             </figure>
                                                         </div>
                                                     </div>
                                                 </figure>
 
-                                                <div class="popularProduct-inner-cart-content">
-                                                    <div class="title line-clamp1">Petlas MultiAction PT565</div>
-                                                    <div class="innerPrice">
-                                                        <p class="price">$20</p>
-                                                        <p class="discountPrice">$25</p>
+                                                <div className="popularProduct-inner-cart-content">
+                                                    <div className="title line-clamp1">Petlas MultiAction PT565</div>
+                                                    <div className="innerPrice">
+                                                        <p className="price">$20</p>
+                                                        <p className="discountPrice">$25</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </Link>
                                     </div>
 
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <Link href="./product-details.html" class="d-block">
-                                            <div class="popularProduct-inner-cart">
-                                                <figure class="popularProduct-inner-cart-image">
-                                                    <img class="product-img" src="./assets/images/home/popularProduct-bg-5.png"
+                                    <div className="col-sm-6 col-md-4 col-lg-3">
+                                        <Link href="./product-details.html" className="d-block">
+                                            <div className="popularProduct-inner-cart">
+                                                <figure className="popularProduct-inner-cart-image">
+                                                    <img className="product-img" src="/assets/images/home/popularProduct-bg-5.png"
                                                         alt="popularProduct" />
-                                                    <div class="new">New</div>
+                                                    <div className="new">New</div>
 
-                                                    <div class="popularProduct-inner-cart-inner">
-                                                        <div class="popularProduct-inner-cart-hover">
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/shopping.png" alt="shopping" />
+                                                    <div className="popularProduct-inner-cart-inner">
+                                                        <div className="popularProduct-inner-cart-hover">
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/shopping.png" alt="shopping" />
                                                             </figure>
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/favourite.png" alt="favourite" />
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/favourite.png" alt="favourite" />
                                                             </figure>
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/View.png" alt="View" />
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/View.png" alt="View" />
                                                             </figure>
                                                         </div>
                                                     </div>
                                                 </figure>
 
-                                                <div class="popularProduct-inner-cart-content">
-                                                    <div class="title line-clamp1">Petlas MultiAction PT565</div>
-                                                    <div class="innerPrice">
-                                                        <p class="price">$20</p>
-                                                        <p class="discountPrice">$25</p>
+                                                <div className="popularProduct-inner-cart-content">
+                                                    <div className="title line-clamp1">Petlas MultiAction PT565</div>
+                                                    <div className="innerPrice">
+                                                        <p className="price">$20</p>
+                                                        <p className="discountPrice">$25</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </Link>
                                     </div>
 
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <Link href="./product-details.html" class="d-block">
-                                            <div class="popularProduct-inner-cart">
-                                                <figure class="popularProduct-inner-cart-image">
-                                                    <img class="product-img" src="./assets/images/home/popularProduct-bg-6.png"
+                                    <div className="col-sm-6 col-md-4 col-lg-3">
+                                        <Link href="./product-details.html" className="d-block">
+                                            <div className="popularProduct-inner-cart">
+                                                <figure className="popularProduct-inner-cart-image">
+                                                    <img className="product-img" src="/assets/images/home/popularProduct-bg-6.png"
                                                         alt="popularProduct" />
-                                                    <div class="new">New</div>
+                                                    <div className="new">New</div>
 
-                                                    <div class="popularProduct-inner-cart-inner">
-                                                        <div class="popularProduct-inner-cart-hover">
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/shopping.png" alt="shopping" />
+                                                    <div className="popularProduct-inner-cart-inner">
+                                                        <div className="popularProduct-inner-cart-hover">
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/shopping.png" alt="shopping" />
                                                             </figure>
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/favourite.png" alt="favourite" />
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/favourite.png" alt="favourite" />
                                                             </figure>
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/View.png" alt="View" />
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/View.png" alt="View" />
                                                             </figure>
                                                         </div>
                                                     </div>
                                                 </figure>
 
-                                                <div class="popularProduct-inner-cart-content">
-                                                    <div class="title line-clamp1">Petlas MultiAction PT565</div>
-                                                    <div class="innerPrice">
-                                                        <p class="price">$20</p>
-                                                        <p class="discountPrice">$25</p>
+                                                <div className="popularProduct-inner-cart-content">
+                                                    <div className="title line-clamp1">Petlas MultiAction PT565</div>
+                                                    <div className="innerPrice">
+                                                        <p className="price">$20</p>
+                                                        <p className="discountPrice">$25</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </Link>
                                     </div>
 
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <Link href="./product-details.html" class="d-block">
-                                            <div class="popularProduct-inner-cart">
-                                                <figure class="popularProduct-inner-cart-image">
-                                                    <img class="product-img" src="./assets/images/home/popularProduct-bg-7.png"
+                                    <div className="col-sm-6 col-md-4 col-lg-3">
+                                        <Link href="./product-details.html" className="d-block">
+                                            <div className="popularProduct-inner-cart">
+                                                <figure className="popularProduct-inner-cart-image">
+                                                    <img className="product-img" src="/assets/images/home/popularProduct-bg-7.png"
                                                         alt="popularProduct" />
-                                                    <div class="discount">-50%</div>
+                                                    <div className="discount">-50%</div>
 
-                                                    <div class="popularProduct-inner-cart-inner">
-                                                        <div class="popularProduct-inner-cart-hover">
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/shopping.png" alt="shopping" />
+                                                    <div className="popularProduct-inner-cart-inner">
+                                                        <div className="popularProduct-inner-cart-hover">
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/shopping.png" alt="shopping" />
                                                             </figure>
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/favourite.png" alt="favourite" />
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/favourite.png" alt="favourite" />
                                                             </figure>
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/View.png" alt="View" />
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/View.png" alt="View" />
                                                             </figure>
                                                         </div>
                                                     </div>
                                                 </figure>
 
-                                                <div class="popularProduct-inner-cart-content">
-                                                    <div class="title line-clamp1">Petlas MultiAction PT565</div>
-                                                    <div class="innerPrice">
-                                                        <p class="price">$20</p>
-                                                        <p class="discountPrice">$25</p>
+                                                <div className="popularProduct-inner-cart-content">
+                                                    <div className="title line-clamp1">Petlas MultiAction PT565</div>
+                                                    <div className="innerPrice">
+                                                        <p className="price">$20</p>
+                                                        <p className="discountPrice">$25</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </Link>
                                     </div>
 
-                                    <div class="col-sm-6 col-md-4 col-lg-3">
-                                        <Link href="./product-details.html" class="d-block">
-                                            <div class="popularProduct-inner-cart">
-                                                <figure class="popularProduct-inner-cart-image">
-                                                    <img class="product-img" src="./assets/images/home/popularProduct-bg-8.png"
+                                    <div className="col-sm-6 col-md-4 col-lg-3">
+                                        <Link href="./product-details.html" className="d-block">
+                                            <div className="popularProduct-inner-cart">
+                                                <figure className="popularProduct-inner-cart-image">
+                                                    <img className="product-img" src="/assets/images/home/popularProduct-bg-8.png"
                                                         alt="popularProduct" />
-                                                    <div class="new">New</div>
+                                                    <div className="new">New</div>
 
-                                                    <div class="popularProduct-inner-cart-inner">
-                                                        <div class="popularProduct-inner-cart-hover">
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/shopping.png" alt="shopping" />
+                                                    <div className="popularProduct-inner-cart-inner">
+                                                        <div className="popularProduct-inner-cart-hover">
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/shopping.png" alt="shopping" />
                                                             </figure>
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/favourite.png" alt="favourite" />
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/favourite.png" alt="favourite" />
                                                             </figure>
-                                                            <figure class="cart-hover-bg">
-                                                                <img src="./assets/images/home/View.png" alt="View" />
+                                                            <figure className="cart-hover-bg">
+                                                                <img src="/assets/images/home/View.png" alt="View" />
                                                             </figure>
                                                         </div>
                                                     </div>
                                                 </figure>
 
-                                                <div class="popularProduct-inner-cart-content">
-                                                    <div class="title line-clamp1">Petlas MultiAction PT565</div>
-                                                    <div class="innerPrice">
-                                                        <p class="price">$20</p>
-                                                        <p class="discountPrice">$25</p>
+                                                <div className="popularProduct-inner-cart-content">
+                                                    <div className="title line-clamp1">Petlas MultiAction PT565</div>
+                                                    <div className="innerPrice">
+                                                        <p className="price">$20</p>
+                                                        <p className="discountPrice">$25</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -424,26 +426,26 @@ const HomePage = () => {
 
                 {/* <!-- Plant for Office START--> */}
                 <section>
-                    <div class="plantHome">
-                        <div class="container">
-                            <div class="plantHome-inner">
-                                <div class="row g-5">
-                                    <div class="col-md-6">
+                    <div className="plantHome">
+                        <div className="container">
+                            <div className="plantHome-inner">
+                                <div className="row g-5">
+                                    <div className="col-md-6">
                                         <figure>
-                                            <img class="plantHome-inner-imge" src="./assets/images/home/plant-office.png" alt="imge" />
+                                            <img className="plantHome-inner-imge" src="/assets/images/home/plant-office.png" alt="imge" />
                                         </figure>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="plantHome-inner-content">
-                                            <h1 class="plantHome-inner-content-title">
+                                    <div className="col-md-6">
+                                        <div className="plantHome-inner-content">
+                                            <h1 className="plantHome-inner-content-title">
                                                 Plant for Office
                                             </h1>
-                                            <p class="plantHome-inner-content-details">
+                                            <p className="plantHome-inner-content-details">
                                                 Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
-                                                aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per.
+                                                aliquet odio mattis. className aptent taciti sociosqu ad litora torquent per.
                                             </p>
                                             <div>
-                                                <Link href="/shop" class="primary-button">Shop Now</Link>
+                                                <Link href="/shop" className="primary-button">Shop Now</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -456,27 +458,27 @@ const HomePage = () => {
 
                 {/* <!-- Plant for Your Home START--> */}
                 <section>
-                    <div class="plantHome">
-                        <div class="container">
-                            <div class="plantHome-inner">
-                                <div class="row g-5">
-                                    <div class="col-md-6">
-                                        <div class="plantHome-inner-content">
-                                            <h1 class="plantHome-inner-content-title">
+                    <div className="plantHome">
+                        <div className="container">
+                            <div className="plantHome-inner">
+                                <div className="row g-5">
+                                    <div className="col-md-6">
+                                        <div className="plantHome-inner-content">
+                                            <h1 className="plantHome-inner-content-title">
                                                 Plant for Your Home
                                             </h1>
-                                            <p class="plantHome-inner-content-details">
+                                            <p className="plantHome-inner-content-details">
                                                 Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
-                                                aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per.
+                                                aliquet odio mattis. className aptent taciti sociosqu ad litora torquent per.
                                             </p>
                                             <div>
-                                                <Link href="/shop" class="primary-button">Shop Now</Link>
+                                                <Link href="/shop" className="primary-button">Shop Now</Link>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div className="col-md-6">
                                         <figure>
-                                            <img class="plantHome-inner-imge" src="./assets/images/home/plant-home.png" alt="imge" />
+                                            <img className="plantHome-inner-imge" src="/assets/images/home/plant-home.png" alt="imge" />
                                         </figure>
                                     </div>
                                 </div>
@@ -487,163 +489,35 @@ const HomePage = () => {
                 {/* <!-- Plant for Your Home END--> */}
 
                 {/* <!-- What People Says Start --> */}
-                <section>
-                    <div class="peopleSays-inner">
-                        <div class="container">
-                            <h1 class="title">
-                                What People Says
-                            </h1>
-                            <p class="details">
-                                Gorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet
-                            </p>
-                            <div class="py-5">
-                                <div class="swiper mySwiper">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <div class="peopleSays-cart">
-                                                <div class="star">
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                </div>
-                                                <p class="details">
-                                                    Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum,
-                                                    ac
-                                                    aliquet dolor sit amet, consectetur
-                                                </p>
-                                                <div class="people-details">
-                                                    <img class="people-img" src="./assets/images/home/people1.png" alt="people img" />
-                                                    <p class="people-name">
-                                                        Mizanur Rahman
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="peopleSays-cart">
-                                                <div class="star">
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                </div>
-                                                <p class="details">
-                                                    Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum,
-                                                    ac
-                                                    aliquet dolor sit amet, consectetur
-                                                </p>
-                                                <div class="people-details">
-                                                    <img class="people-img" src="./assets/images/home/people2.png" alt="people img" />
-                                                    <p class="people-name">
-                                                        Mizanur Rahman
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="peopleSays-cart">
-                                                <div class="star">
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                </div>
-                                                <p class="details">
-                                                    Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum,
-                                                    ac
-                                                    aliquet dolor sit amet, consectetur
-                                                </p>
-                                                <div class="people-details">
-                                                    <img class="people-img" src="./assets/images/home/people3.png" alt="people img" />
-                                                    <p class="people-name">
-                                                        Mizanur Rahman
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="peopleSays-cart">
-                                                <div class="star">
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                </div>
-                                                <p class="details">
-                                                    Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum,
-                                                    ac
-                                                    aliquet dolor sit amet, consectetur
-                                                </p>
-                                                <div class="people-details">
-                                                    <img class="people-img" src="./assets/images/home/people1.png" alt="people img" />
-                                                    <p class="people-name">
-                                                        Mizanur Rahman
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <div class="peopleSays-cart">
-                                                <div class="star">
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                    <img src="./assets/images/home/star.svg" alt="star" />
-                                                </div>
-                                                <p class="details">
-                                                    Sorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum,
-                                                    ac
-                                                    aliquet dolor sit amet, consectetur
-                                                </p>
-                                                <div class="people-details">
-                                                    <img class="people-img" src="./assets/images/home/people1.png" alt="people img" />
-                                                    <p class="people-name">
-                                                        Mizanur Rahman
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-pagination"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <ReviewSwiper />
                 {/* <!-- What People Says end --> */}
 
                 {/* <!-- Read our recent Blogs START--> */}
                 <section>
-                    <div class="inner-recentBlock">
-                        <div class="container">
-                            <h1 class="section-header">
+                    <div className="inner-recentBlock">
+                        <div className="container">
+                            <h1 className="section-header">
                                 Read Our Recent Blogs
                             </h1>
-                            <p class="section-description">
+                            <p className="section-description">
                                 Gorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet
                             </p>
-                            <div class="row g-3 my-5">
-                                <div class="col-md-6 col-lg-4">
+                            <div className="row g-3 my-5">
+                                <div className="col-md-6 col-lg-4">
                                     <Link href="./blog-details.html">
-                                        <div class="blog-cart">
+                                        <div className="blog-cart">
                                             <figure>
-                                                <img class="blog-img" src="./assets/images/home/blog-1.png" alt="blog image" />
+                                                <img className="blog-img" src="/assets/images/home/blog-1.png" alt="blog image" />
                                             </figure>
-                                            <div class="blog-cart-content">
-                                                <h1 class="blog-title line-clamp2">
+                                            <div className="blog-cart-content">
+                                                <h1 className="blog-title line-clamp2">
                                                     How to choose best plant for you that makes your house design better
                                                 </h1>
-                                                <div class="blog-author">
-                                                    <p class="author-name">
+                                                <div className="blog-author">
+                                                    <p className="author-name">
                                                         By Akash Basak
                                                     </p>
-                                                    <p class="publish-date">
+                                                    <p className="publish-date">
                                                         10 june 2024
                                                     </p>
                                                 </div>
@@ -652,21 +526,21 @@ const HomePage = () => {
                                         </div>
                                     </Link>
                                 </div>
-                                <div class="col-md-6 col-lg-4">
+                                <div className="col-md-6 col-lg-4">
                                     <Link href="./blog-details.html">
-                                        <div class="blog-cart">
+                                        <div className="blog-cart">
                                             <figure>
-                                                <img class="blog-img" src="./assets/images/home/blog-2.png" alt="blog image" />
+                                                <img className="blog-img" src="/assets/images/home/blog-2.png" alt="blog image" />
                                             </figure>
-                                            <div class="blog-cart-content">
-                                                <h1 class="blog-title line-clamp2">
+                                            <div className="blog-cart-content">
+                                                <h1 className="blog-title line-clamp2">
                                                     How to choose best plant for you that makes your house design better
                                                 </h1>
-                                                <div class="blog-author">
-                                                    <p class="author-name">
+                                                <div className="blog-author">
+                                                    <p className="author-name">
                                                         By Akash Basak
                                                     </p>
-                                                    <p class="publish-date">
+                                                    <p className="publish-date">
                                                         10 june 2024
                                                     </p>
                                                 </div>
@@ -675,21 +549,21 @@ const HomePage = () => {
                                         </div>
                                     </Link>
                                 </div>
-                                <div class="col-md-6 col-lg-4">
+                                <div className="col-md-6 col-lg-4">
                                     <Link href="./blog-details.html">
-                                        <div class="blog-cart">
+                                        <div className="blog-cart">
                                             <figure>
-                                                <img class="blog-img" src="./assets/images/home/blog-3.png" alt="blog image" />
+                                                <img className="blog-img" src="/assets/images/home/blog-3.png" alt="blog image" />
                                             </figure>
-                                            <div class="blog-cart-content">
-                                                <h1 class="blog-title line-clamp2">
+                                            <div className="blog-cart-content">
+                                                <h1 className="blog-title line-clamp2">
                                                     How to choose best plant for you that makes your house design better
                                                 </h1>
-                                                <div class="blog-author">
-                                                    <p class="author-name">
+                                                <div className="blog-author">
+                                                    <p className="author-name">
                                                         By Akash Basak
                                                     </p>
-                                                    <p class="publish-date">
+                                                    <p className="publish-date">
                                                         10 june 2024
                                                     </p>
                                                 </div>
@@ -700,8 +574,8 @@ const HomePage = () => {
                                 </div>
                             </div>
 
-                            <div class="d-flex justify-content-center">
-                                <Link href="/blog" class="primary-button">
+                            <div className="d-flex justify-content-center">
+                                <Link href="/blog" className="primary-button">
                                     See More
                                 </Link>
                             </div>
@@ -712,12 +586,12 @@ const HomePage = () => {
 
                 {/* <!-- Support section START --> */}
                 <section>
-                    <div class="inner-support">
-                        <div class="container">
-                            <div class="row g-3 ">
-                                <div class="col-sm-6 col-lg-4 col-xl-3">
-                                    <div class="support-content">
-                                        <div class="icon">
+                    <div className="inner-support">
+                        <div className="container">
+                            <div className="row g-3 ">
+                                <div className="col-sm-6 col-lg-4 col-xl-3">
+                                    <div className="support-content">
+                                        <div className="icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32" fill="none">
                                                 <path
                                                     d="M44.4302 13.7107L43.2002 8.78866C43.3668 8.75318 43.5161 8.66165 43.6233 8.52934C43.7305 8.39702 43.7891 8.23195 43.7892 8.06166V7.26766C43.7884 6.4391 43.4589 5.64471 42.873 5.05883C42.2872 4.47295 41.4928 4.14346 40.6642 4.14266H35.0642V2.51066C35.0639 2.10284 34.9018 1.7118 34.6134 1.42342C34.3251 1.13505 33.934 0.972921 33.5262 0.972656H4.95321C4.54539 0.972921 4.15435 1.13505 3.86597 1.42342C3.5776 1.7118 3.41548 2.10284 3.41521 2.51066V16.0007C3.41521 16.198 3.4936 16.3872 3.63312 16.5267C3.77265 16.6663 3.96189 16.7447 4.15921 16.7447C4.35653 16.7447 4.54577 16.6663 4.6853 16.5267C4.82483 16.3872 4.90321 16.198 4.90321 16.0007V2.51066C4.90321 2.4974 4.90848 2.48468 4.91786 2.4753C4.92723 2.46593 4.93995 2.46066 4.95321 2.46066H33.5212C33.5345 2.46066 33.5472 2.46593 33.5566 2.4753C33.5659 2.48468 33.5712 2.4974 33.5712 2.51066V16.0017C33.5712 16.199 33.6496 16.3882 33.7891 16.5277C33.9286 16.6673 34.1179 16.7457 34.3152 16.7457C34.5125 16.7457 34.7018 16.6673 34.8413 16.5277C34.9808 16.3882 35.0592 16.199 35.0592 16.0017V15.1587H43.8412C44.3552 15.1597 44.8557 15.3234 45.271 15.6262C45.6863 15.9291 45.9951 16.3556 46.1532 16.8447H43.8412C43.6439 16.8447 43.4547 16.923 43.3151 17.0626C43.1756 17.2021 43.0972 17.3913 43.0972 17.5887V19.1757C43.098 19.7936 43.3438 20.3861 43.7808 20.8231C44.2178 21.26 44.8102 21.5059 45.4282 21.5067H46.2712V24.7797H44.3232C44.0038 23.8528 43.4031 23.0486 42.6048 22.4794C41.8066 21.9102 40.8506 21.6042 39.8702 21.6042C38.8898 21.6042 37.9338 21.9102 37.1356 22.4794C36.3373 23.0486 35.7366 23.8528 35.4172 24.7797H35.0592V19.1797C35.0592 18.9823 34.9808 18.7931 34.8413 18.6536C34.7018 18.514 34.5125 18.4357 34.3152 18.4357C34.1179 18.4357 33.9286 18.514 33.7891 18.6536C33.6496 18.7931 33.5712 18.9823 33.5712 19.1797V24.7797H18.1352C17.8158 23.8528 17.2151 23.0486 16.4168 22.4794C15.6186 21.9102 14.6626 21.6042 13.6822 21.6042C12.7018 21.6042 11.7458 21.9102 10.9476 22.4794C10.1494 23.0486 9.54864 23.8528 9.22921 24.7797H4.95321C4.93995 24.7797 4.92723 24.7744 4.91786 24.765C4.90848 24.7556 4.90321 24.7429 4.90321 24.7297V23.0927H8.12721C8.32453 23.0927 8.51377 23.0143 8.6533 22.8747C8.79283 22.7352 8.87121 22.546 8.87121 22.3487C8.87121 22.1513 8.79283 21.9621 8.6533 21.8226C8.51377 21.683 8.32453 21.6047 8.12721 21.6047H0.985211C0.78789 21.6047 0.598651 21.683 0.459123 21.8226C0.319596 21.9621 0.241211 22.1513 0.241211 22.3487C0.241211 22.546 0.319596 22.7352 0.459123 22.8747C0.598651 23.0143 0.78789 23.0927 0.985211 23.0927H3.41521V24.7297C3.41548 25.1375 3.5776 25.5285 3.86597 25.8169C4.15435 26.1053 4.54539 26.2674 4.95321 26.2677H8.97221C8.97221 26.2847 8.97221 26.3007 8.97221 26.3177C8.97221 27.5674 9.46865 28.7659 10.3523 29.6495C11.236 30.5332 12.4345 31.0297 13.6842 31.0297C14.9339 31.0297 16.1324 30.5332 17.0161 29.6495C17.8998 28.7659 18.3962 27.5674 18.3962 26.3177C18.3962 26.3007 18.3962 26.2847 18.3962 26.2677H35.1592C35.1592 26.2847 35.1592 26.3007 35.1592 26.3177C35.1592 27.5674 35.6557 28.7659 36.5393 29.6495C37.423 30.5332 38.6215 31.0297 39.8712 31.0297C41.1209 31.0297 42.3194 30.5332 43.2031 29.6495C44.0868 28.7659 44.5832 27.5674 44.5832 26.3177C44.5832 26.3007 44.5832 26.2847 44.5832 26.2677H47.0152C47.2125 26.2677 47.4018 26.1893 47.5413 26.0497C47.6808 25.9102 47.7592 25.721 47.7592 25.5237V17.5877C47.7588 16.6503 47.4229 15.7441 46.8123 15.033C46.2017 14.3219 45.3567 13.8528 44.4302 13.7107ZM35.0592 5.63066H40.6592C41.0932 5.63119 41.5093 5.80383 41.8162 6.11071C42.123 6.41759 42.2957 6.83366 42.2962 7.26766V7.31766H35.0592V5.63066ZM35.0592 13.6657V8.81066H41.6702L42.8852 13.6717L35.0592 13.6657ZM13.6822 29.5417C13.0446 29.5417 12.4212 29.3526 11.8911 28.9983C11.3609 28.6441 10.9476 28.1405 10.7036 27.5514C10.4596 26.9623 10.3958 26.3141 10.5202 25.6887C10.6446 25.0633 10.9516 24.4888 11.4025 24.0379C11.8534 23.5871 12.4278 23.28 13.0532 23.1556C13.6786 23.0312 14.3269 23.0951 14.916 23.3391C15.5051 23.5831 16.0086 23.9963 16.3629 24.5265C16.7171 25.0567 16.9062 25.68 16.9062 26.3177C16.9054 27.1725 16.5655 27.9921 15.961 28.5965C15.3566 29.2009 14.537 29.5409 13.6822 29.5417ZM39.8702 29.5417C39.2326 29.5417 38.6092 29.3526 38.0791 28.9983C37.5489 28.6441 37.1356 28.1405 36.8916 27.5514C36.6476 26.9623 36.5838 26.3141 36.7082 25.6887C36.8326 25.0633 37.1396 24.4888 37.5905 24.0379C38.0414 23.5871 38.6158 23.28 39.2412 23.1556C39.8666 23.0312 40.5149 23.0951 41.104 23.3391C41.6931 23.5831 42.1966 23.9963 42.5509 24.5265C42.9051 25.0567 43.0942 25.68 43.0942 26.3177C43.0934 27.1725 42.7535 27.9921 42.149 28.5965C41.5446 29.2009 40.725 29.5409 39.8702 29.5417ZM46.2702 20.0187H45.4272C45.2037 20.0184 44.9894 19.9295 44.8314 19.7715C44.6734 19.6134 44.5845 19.3992 44.5842 19.1757V18.3327H46.2702V20.0187Z"
@@ -739,7 +613,7 @@ const HomePage = () => {
                                                     fill="#00715D" />
                                             </svg>
                                         </div>
-                                        <div class="support-text">
+                                        <div className="support-text">
                                             <h4>
                                                 Free Shipping
                                             </h4>
@@ -749,9 +623,9 @@ const HomePage = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 col-lg-4 col-xl-3">
-                                    <div class="support-content">
-                                        <div class="icon">
+                                <div className="col-sm-6 col-lg-4 col-xl-3">
+                                    <div className="support-content">
+                                        <div className="icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
                                                 <path
                                                     d="M41.5804 8.83621L33.7232 5.69335C33.5356 5.61817 33.3263 5.61817 33.1387 5.69335L25.2815 8.83621C25.1359 8.89458 25.011 8.99523 24.9231 9.12518C24.8351 9.25513 24.7881 9.40844 24.7881 9.56535V17.6865C24.7922 19.1787 25.1805 20.6447 25.9156 21.9433C26.6508 23.2418 27.708 24.3292 28.9854 25.1005L33.0271 27.5252C33.1491 27.5983 33.2887 27.6369 33.4309 27.6369C33.5732 27.6369 33.7128 27.5983 33.8348 27.5252L37.3595 25.4101V34.2101C37.3591 34.5517 37.2232 34.8792 36.9816 35.1208C36.7401 35.3623 36.4126 35.4982 36.0709 35.4986H5.64809C5.30646 35.4982 4.97895 35.3623 4.73739 35.1208C4.49582 34.8792 4.35993 34.5517 4.35951 34.2101V16.6368H22.4309C22.6393 16.6368 22.8392 16.554 22.9865 16.4067C23.1339 16.2593 23.2167 16.0595 23.2167 15.8511C23.2167 15.6427 23.1339 15.4428 22.9865 15.2955C22.8392 15.1481 22.6393 15.0654 22.4309 15.0654H4.35951V13.2111C4.35993 12.8694 4.49582 12.5419 4.73739 12.3004C4.97895 12.0588 5.30646 11.9229 5.64809 11.9225H22.4309C22.6393 11.9225 22.8392 11.8397 22.9865 11.6924C23.1339 11.545 23.2167 11.3452 23.2167 11.1368C23.2167 10.9284 23.1339 10.7285 22.9865 10.5812C22.8392 10.4338 22.6393 10.3511 22.4309 10.3511H5.64809C4.88969 10.3515 4.16248 10.6529 3.62622 11.1892C3.08996 11.7255 2.7885 12.4527 2.78809 13.2111V34.2054C2.7885 34.9637 3.08996 35.691 3.62622 36.2272C4.16248 36.7635 4.88969 37.0649 5.64809 37.0654H36.0709C36.8293 37.0649 37.5565 36.7635 38.0928 36.2272C38.6291 35.691 38.9305 34.9637 38.9309 34.2054V24.3368C39.9097 23.5253 40.6985 22.5088 41.2415 21.3592C41.7846 20.2096 42.0687 18.9548 42.0738 17.6834V9.56535C42.0738 9.40844 42.0267 9.25513 41.9388 9.12518C41.8509 8.99523 41.726 8.89458 41.5804 8.83621ZM40.5024 17.6865C40.4992 18.9075 40.1814 20.1071 39.5797 21.1695C38.978 22.232 38.1127 23.1215 37.0672 23.7522L33.4309 25.9349L29.7947 23.7522C28.7492 23.1215 27.8839 22.232 27.2822 21.1695C26.6805 20.1071 26.3627 18.9075 26.3595 17.6865V10.0965L33.4309 7.26792L40.5024 10.0965V17.6865Z"
@@ -764,7 +638,7 @@ const HomePage = () => {
                                                     fill="#00715D" />
                                             </svg>
                                         </div>
-                                        <div class="support-text">
+                                        <div className="support-text">
                                             <h4>
                                                 Secure Payment
                                             </h4>
@@ -774,9 +648,9 @@ const HomePage = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 col-lg-4 col-xl-3">
-                                    <div class="support-content">
-                                        <div class="icon">
+                                <div className="col-sm-6 col-lg-4 col-xl-3">
+                                    <div className="support-content">
+                                        <div className="icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="45" height="39" viewBox="0 0 45 39" fill="none">
                                                 <path
                                                     d="M28.0151 31.1749H17.5041C17.3391 31.1749 17.1809 31.1094 17.0643 30.9927C16.9476 30.8761 16.8821 30.7179 16.8821 30.5529C16.8821 30.3879 16.9476 30.2297 17.0643 30.1131C17.1809 29.9964 17.3391 29.9309 17.5041 29.9309H28.0151C28.2295 29.9321 28.4421 29.8908 28.6405 29.8095C28.8389 29.7281 29.0192 29.6083 29.1711 29.4569C29.1991 29.4289 29.2231 29.4019 29.2461 29.3769C29.2584 29.3578 29.2717 29.3395 29.2861 29.3219C29.5279 29.0305 29.6599 28.6636 29.6591 28.2849C29.6585 27.8485 29.485 27.4302 29.1764 27.1216C28.8678 26.813 28.4495 26.6394 28.0131 26.6389H22.1401C22.0537 26.6393 21.9682 26.6218 21.889 26.5873C21.8098 26.5529 21.7387 26.5024 21.6801 26.4389C20.8963 25.5785 19.9418 24.8911 18.8773 24.4205C17.8128 23.9499 16.6619 23.7065 15.4981 23.7059H7.95208C7.78711 23.7059 7.62891 23.6404 7.51226 23.5237C7.39561 23.4071 7.33008 23.2489 7.33008 23.0839C7.33008 22.919 7.39561 22.7607 7.51226 22.6441C7.62891 22.5274 7.78711 22.4619 7.95208 22.4619H15.5031C16.7933 22.4628 18.0702 22.7232 19.2576 23.2278C20.4451 23.7324 21.5189 24.4707 22.4151 25.3989H28.0151C28.7812 25.3997 29.5158 25.7043 30.0577 26.2458C30.5997 26.7874 30.9048 27.5218 30.9061 28.2879C30.9064 28.9333 30.6887 29.5599 30.2881 30.0659C30.2724 30.0916 30.2546 30.116 30.2351 30.1389C30.1731 30.2089 30.1191 30.2719 30.0551 30.3389C29.7877 30.6076 29.4698 30.8206 29.1196 30.9658C28.7695 31.111 28.3941 31.1855 28.0151 31.1849V31.1749Z"
@@ -801,7 +675,7 @@ const HomePage = () => {
                                                     fill="#00715D" />
                                             </svg>
                                         </div>
-                                        <div class="support-text">
+                                        <div className="support-text">
                                             <h4>
                                                 Easy Return
                                             </h4>
@@ -811,16 +685,16 @@ const HomePage = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-6 col-lg-4 col-xl-3">
-                                    <div class="support-content">
-                                        <div class="icon">
+                                <div className="col-sm-6 col-lg-4 col-xl-3">
+                                    <div className="support-content">
+                                        <div className="icon">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="41" viewBox="0 0 36 41" fill="none">
                                                 <path
                                                     d="M32.0639 14.0234C31.9742 10.4228 30.4808 6.99986 27.9026 4.48499C25.3243 1.97013 21.8652 0.5625 18.2635 0.5625C14.6618 0.5625 11.2028 1.97013 8.62446 4.48499C6.04617 6.99986 4.55285 10.4228 4.46316 14.0234C3.91303 14.0648 3.37664 14.2153 2.88515 14.4659C2.39366 14.7165 1.95689 15.0623 1.60022 15.4831C1.24355 15.904 0.974106 16.3916 0.807541 16.9176C0.640976 17.4435 0.580618 17.9973 0.629973 18.5468V25.7541C0.581702 26.3707 0.667612 26.9904 0.88179 27.5706C1.09597 28.1508 1.43333 28.6777 1.87065 29.115C2.30796 29.5523 2.83485 29.8896 3.41504 30.1038C3.99523 30.318 4.61494 30.4039 5.23151 30.3556H7.45524C7.65845 30.3556 7.85333 30.2749 7.99703 30.1312C8.14072 29.9875 8.22145 29.7926 8.22145 29.5894V14.7404C8.22145 14.5371 8.14072 14.3423 7.99703 14.1986C7.85333 14.0549 7.65845 13.9742 7.45524 13.9742H6.00093C6.00093 10.7206 7.29339 7.60038 9.59397 5.2998C11.8946 2.99921 15.0148 1.70676 18.2683 1.70676C21.5218 1.70676 24.6421 2.99921 26.9427 5.2998C29.2433 7.60038 30.5357 10.7206 30.5357 13.9742H29.0739C28.8707 13.9742 28.6758 14.0549 28.5321 14.1986C28.3884 14.3423 28.3077 14.5371 28.3077 14.7404V29.5605C28.3077 29.7637 28.3884 29.9586 28.5321 30.1023C28.6758 30.246 28.8707 30.3267 29.0739 30.3267H30.5304C30.3163 35.5939 27.7855 36.8288 22.7334 37.0503V36.5367C22.7333 36.3351 22.6934 36.1356 22.6161 35.9494C22.5387 35.7633 22.4255 35.5942 22.2828 35.4519C22.14 35.3096 21.9707 35.1968 21.7843 35.12C21.598 35.0432 21.3983 35.0038 21.1967 35.0043H16.3812C15.9745 35.0043 15.5844 35.1658 15.2968 35.4534C15.0092 35.741 14.8477 36.131 14.8477 36.5378V39.029C14.8477 39.4357 15.0092 39.8258 15.2968 40.1133C15.5844 40.4009 15.9745 40.5625 16.3812 40.5625H21.2192C21.6259 40.5625 22.016 40.4009 22.3035 40.1133C22.5911 39.8258 22.7527 39.4357 22.7527 39.029V38.5838C27.6132 38.3613 31.8156 37.3575 32.0628 30.2807C32.6129 30.2393 33.1493 30.0889 33.6408 29.8383C34.1323 29.5877 34.5691 29.2419 34.9257 28.821C35.2824 28.4001 35.5518 27.9125 35.7184 27.3865C35.885 26.8606 35.9453 26.3068 35.896 25.7573V18.5511C35.9468 18.0012 35.8876 17.4467 35.7217 16.9199C35.5558 16.3932 35.2866 15.9048 34.9298 15.4832C34.5731 15.0617 34.1359 14.7155 33.6438 14.4649C33.1517 14.2142 32.6146 14.0641 32.0639 14.0234ZM6.68581 15.4531V28.7911H5.18764C4.77388 28.8361 4.35529 28.7878 3.96271 28.6495C3.57013 28.5113 3.21355 28.2868 2.91925 27.9925C2.62496 27.6982 2.40043 27.3416 2.26222 26.9491C2.12401 26.5565 2.07564 26.1379 2.12066 25.7241V18.5179C2.07564 18.1041 2.12401 17.6856 2.26222 17.293C2.40043 16.9004 2.62496 16.5438 2.91925 16.2495C3.21355 15.9552 3.57013 15.7307 3.96271 15.5925C4.35529 15.4543 4.77388 15.4059 5.18764 15.4509L6.68581 15.4531ZM21.2149 37.8711V39.0365H16.3812V36.5452H21.2192L21.2149 37.8711ZM34.3593 25.7498C34.4043 26.1636 34.3559 26.5822 34.2177 26.9747C34.0795 27.3673 33.855 27.7239 33.5607 28.0182C33.2664 28.3125 32.9098 28.537 32.5172 28.6752C32.1246 28.8134 31.706 28.8618 31.2923 28.8168H29.8401V15.5066H31.3383C31.7521 15.4615 32.1707 15.5099 32.5632 15.6481C32.9558 15.7863 33.3124 16.0109 33.6067 16.3052C33.901 16.5995 34.1255 16.956 34.2637 17.3486C34.4019 17.7412 34.4503 18.1598 34.4053 18.5736L34.3593 25.7498Z"
                                                     fill="#00715D" />
                                             </svg>
                                         </div>
-                                        <div class="support-text">
+                                        <div className="support-text">
                                             <h4>
                                                 27/7 Support
                                             </h4>

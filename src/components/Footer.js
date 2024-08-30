@@ -3,86 +3,86 @@ import Link from "next/link";
 const Footer = () => {
     return (
         <footer>
-            <div class="footer-inner">
-                <div class="container">
-                    <div class="row g-3 g-xl-5">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="footer-left-content">
-                                <img src="./assets/images/footer/Logo.png" alt="logo" />
+            <div className="footer-inner">
+                <div className="container">
+                    <div className="row g-3 g-xl-5">
+                        <div className="col-md-6 col-lg-4">
+                            <div className="footer-left-content">
+                                <img src="/assets/images/footer/Logo.png" alt="logo" />
                                 <p>
                                     Gorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit amet adipiscing elit dolor sit amet.
                                     Gorem ipsum dolor sit amet, consectetur
                                 </p>
                             </div>
                         </div>
-                        <div class="footer-middle-content col-md-6 col-lg-2">
+                        <div className="footer-middle-content col-md-6 col-lg-2">
                             <h3>
                                 Quick Links
                             </h3>
                             <ul>
-                                <li class="footer-list">
-                                    <Link class="footer-link" href="/about-us">
+                                <li className="footer-list">
+                                    <Link className="footer-link" href="/about-us">
                                         About Us
                                     </Link>
                                 </li>
-                                <li class="footer-list">
-                                    <Link class="footer-link" href="/shop">
+                                <li className="footer-list">
+                                    <Link className="footer-link" href="/shop">
                                         Shop
                                     </Link>
                                 </li>
-                                <li class="footer-list">
-                                    <Link class="footer-link" href="/contact-us">
+                                <li className="footer-list">
+                                    <Link className="footer-link" href="/contact-us">
                                         Contact Us
                                     </Link>
                                 </li>
-                                <li class="footer-list">
-                                    <Link class="footer-link" href="/blog">
+                                <li className="footer-list">
+                                    <Link className="footer-link" href="/blog">
                                         Blog
                                     </Link>
                                 </li>
                             </ul>
                         </div>
-                        <div class="footer-middle-content col-md-6 col-lg-2">
+                        <div className="footer-middle-content col-md-6 col-lg-2">
                             <h3>
                                 Support
                             </h3>
                             <ul>
-                                <li class="footer-list">
-                                    <Link class="footer-link" href="javascript:void(0">
+                                <li className="footer-list">
+                                    <a className="footer-link" href="#" onClick={(e) => e.preventDefault()}>
                                         Track your Order
-                                    </Link>
+                                    </a>
                                 </li>
-                                <li class="footer-list">
-                                    <Link class="footer-link" href="javascript:void(0">
+                                <li className="footer-list">
+                                    <a className="footer-link" href="#" onClick={(e) => e.preventDefault()}>
                                         Help & FAQ
-                                    </Link>
+                                    </a>
                                 </li>
-                                <li class="footer-list">
-                                    <Link class="footer-link" href="javascript:void(0">
+                                <li className="footer-list">
+                                    <a className="footer-link" href="#" onClick={(e) => e.preventDefault()}>
                                         Privacy Policy
-                                    </Link>
+                                    </a>
                                 </li>
-                                <li class="footer-list">
-                                    <Link class="footer-link" href="javascript:void(0">
+                                <li className="footer-list">
+                                    <a className="footer-link" href="#" onClick={(e) => e.preventDefault()}>
                                         Return & Refund
-                                    </Link>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
 
-                        <div class="footer-right-content col-md-6 col-lg-4">
+                        <div className="footer-right-content col-md-6 col-lg-4">
                             <h3>
                                 Follow us on
                             </h3>
-                            <div class="social-icn">
-                                <Link href="javascript:void(0">
+                            <div className="social-icn">
+                                <a href="#" onClick={(e) => e.preventDefault()}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                         <path
                                             d="M29.3337 16.0335C29.3337 8.65505 23.3603 2.66675 16.0003 2.66675C8.64033 2.66675 2.66699 8.65505 2.66699 16.0335C2.66699 22.503 7.25366 27.8898 13.3337 29.1329V20.0435H10.667V16.0335H13.3337V12.6918C13.3337 10.112 15.427 8.01345 18.0003 8.01345H21.3337V12.0235H18.667C17.9337 12.0235 17.3337 12.625 17.3337 13.3601V16.0335H21.3337V20.0435H17.3337V29.3334C24.067 28.6651 29.3337 22.9708 29.3337 16.0335Z"
                                             fill="white" />
                                     </svg>
-                                </Link>
-                                <Link href="javascript:void(0">
+                                </a>
+                                <a href="#" onClick={(e) => e.preventDefault()}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                         <path
                                             d="M18.1471 16.3239C18.1391 16.7463 18.0058 17.1568 17.7642 17.5033C17.5226 17.8499 17.1835 18.1169 16.79 18.2705C16.3965 18.4241 15.9662 18.4575 15.5537 18.3663C15.1412 18.2751 14.7651 18.0635 14.473 17.7583C14.1809 17.4531 13.986 17.068 13.913 16.6519C13.84 16.2358 13.8921 15.8074 14.0629 15.421C14.2336 15.0346 14.5153 14.7076 14.8721 14.4814C15.2289 14.2552 15.6448 14.1401 16.0671 14.1506C16.6283 14.1713 17.1594 14.4099 17.5477 14.8156C17.936 15.2213 18.151 15.7623 18.1471 16.3239Z"
@@ -94,32 +94,32 @@ const Footer = () => {
                                             d="M16.0662 2.66667C12.53 2.64899 9.13155 4.03679 6.61857 6.52477C4.10558 9.01276 2.68386 12.3971 2.66618 15.9333C2.6485 19.4696 4.0363 22.868 6.52428 25.381C9.01227 27.8939 12.3966 29.3157 15.9328 29.3333C17.6838 29.3421 19.4193 29.0059 21.0404 28.3439C22.6614 27.6819 24.1362 26.7072 25.3805 25.4752C26.6248 24.2433 27.6142 22.7784 28.2924 21.164C28.9706 19.5497 29.3241 17.8176 29.3329 16.0667C29.3416 14.3157 29.0054 12.5802 28.3434 10.9592C27.6814 9.33813 26.7067 7.86336 25.4747 6.61905C24.2428 5.37475 22.7779 4.38527 21.1636 3.70712C19.5492 3.02897 17.8171 2.67543 16.0662 2.66667ZM24.1635 19.6027C24.1672 20.2008 24.0522 20.7938 23.825 21.3472C23.5979 21.9006 23.2631 22.4034 22.8402 22.8264C22.4173 23.2495 21.9146 23.5843 21.3613 23.8117C20.808 24.039 20.215 24.1542 19.6168 24.1507H12.5182C11.9201 24.154 11.3273 24.0387 10.7741 23.8114C10.2209 23.5842 9.71822 23.2494 9.29525 22.8266C8.87227 22.4037 8.53737 21.9012 8.30992 21.348C8.08247 20.7949 7.967 20.2021 7.97018 19.604V12.504C7.96647 11.9058 8.08152 11.3129 8.30868 10.7595C8.53584 10.2061 8.87058 9.70332 9.2935 9.28027C9.71643 8.85723 10.2191 8.52234 10.7724 8.29501C11.3257 8.06769 11.9187 7.95246 12.5168 7.956H19.6168C20.2149 7.95247 20.8077 8.06765 21.361 8.29489C21.9142 8.52213 22.4168 8.8569 22.8397 9.2798C23.2626 9.70271 23.5974 10.2053 23.8246 10.7586C24.0519 11.3118 24.1671 11.9046 24.1635 12.5027V19.6027Z"
                                             fill="white" />
                                     </svg>
-                                </Link>
-                                <Link href="javascript:void(0">
+                                </a>
+                                <a href="#" onClick={(e) => e.preventDefault()}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                                         <path
                                             d="M16.0003 2.66675C23.3718 2.66675 29.3337 8.62865 29.3337 16.0001C29.3337 23.3715 23.3718 29.3334 16.0003 29.3334C8.6289 29.3334 2.66699 23.3715 2.66699 16.0001C2.66699 8.62865 8.6289 2.66675 16.0003 2.66675ZM13.5622 23.0287C19.467 23.0287 22.7051 18.1334 22.7051 13.8858V13.4667C23.3337 13.0096 23.886 12.4382 24.3051 11.7906C23.7337 12.0382 23.1051 12.2096 22.4575 12.3048C23.1241 11.9048 23.6384 11.2763 23.867 10.5334C23.2384 10.8953 22.5527 11.162 21.8289 11.3144C21.2384 10.6858 20.4003 10.3048 19.486 10.3048C17.7146 10.3048 16.267 11.7525 16.267 13.5239C16.267 13.7715 16.286 14.0191 16.3622 14.2477C13.6956 14.1144 11.3146 12.8382 9.73366 10.8953C9.46699 11.3715 9.29556 11.9239 9.29556 12.5144C9.29556 13.6191 9.86699 14.6096 10.7241 15.181C10.1908 15.181 9.69556 15.0287 9.27652 14.781V14.8191C9.27652 16.381 10.3813 17.6763 11.8479 17.981C11.5813 18.0572 11.2956 18.0953 11.0098 18.0953C10.8003 18.0953 10.6098 18.0763 10.4003 18.0382C10.8003 19.3144 12.0003 20.2477 13.3908 20.2667C12.286 21.1239 10.8956 21.6382 9.3908 21.6382C9.12414 21.6382 8.87652 21.6382 8.6289 21.6001C10.0384 22.5144 11.7337 23.0477 13.5432 23.0477"
                                             fill="white" />
                                     </svg>
-                                </Link>
+                                </a>
                             </div>
                             <p>
                                 Subscribe our Newsletter
                             </p>
-                            <form class="newsletter-form">
-                                <div class="newsletter-input">
-                                    <div class="newsletter-icon mb-1">
+                            <form className="newsletter-form">
+                                <div className="newsletter-input">
+                                    <div className="newsletter-icon mb-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
                                             <path d="M5.83398 5.0835L8.28566 6.53302C9.715 7.3781 10.2863 7.3781 11.7156 6.53302L14.1673 5.0835"
-                                                stroke="#64748B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                stroke="#64748B" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                             <path
                                                 d="M1.68013 9.22977C1.73461 11.7844 1.76185 13.0617 2.70446 14.0079C3.64706 14.9541 4.95894 14.987 7.58268 15.0529C9.19975 15.0936 10.8009 15.0936 12.418 15.0529C15.0417 14.987 16.3536 14.9541 17.2962 14.0079C18.2388 13.0617 18.266 11.7844 18.3205 9.22977C18.338 8.40836 18.338 7.59181 18.3205 6.77041C18.266 4.2158 18.2388 2.93849 17.2962 1.9923C16.3536 1.04611 15.0417 1.01315 12.418 0.947222C10.8009 0.906592 9.19975 0.90659 7.58268 0.947217C4.95893 1.01313 3.64706 1.04609 2.70445 1.99229C1.76184 2.93848 1.73461 4.21579 1.68013 6.7704C1.66261 7.5918 1.66261 8.40836 1.68013 9.22977Z"
-                                                stroke="#64748B" stroke-width="1.5" stroke-linejoin="round" />
+                                                stroke="#64748B" strokeWidth="1.5" strokeLinejoin="round" />
                                         </svg>
                                     </div>
                                     <input type="text" name="" id="" placeholder="example@gmail.com" />
                                 </div>
-                                <button class="footer-btn">
+                                <button className="footer-btn">
                                     Subscribe
                                 </button>
                             </form>
@@ -127,7 +127,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div class="coppy-rights">
+            <div className="coppy-rights">
                 <p>@plantify 2024.All rights reserves</p>
             </div>
         </footer>
