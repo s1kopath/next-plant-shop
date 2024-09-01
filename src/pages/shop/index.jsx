@@ -3,7 +3,7 @@ import Layout from "@/components/Layout";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
-import 'swiper/swiper-bundle.min.css'; // Import Swiper styles
+import 'swiper/swiper-bundle.min.css';
 
 // Configure Swiper to use Navigation module
 SwiperCore.use([Navigation]);

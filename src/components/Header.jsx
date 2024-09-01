@@ -33,6 +33,11 @@ const Header = () => {
                                     Blog
                                 </Link>
                             </li>
+                            <li className="desktop-menu-list">
+                                <Link className="desktop-menu-link" href="/test">
+                                    Test
+                                </Link>
+                            </li>
                         </ul>
 
                         <ul className="right-nav d-flex">

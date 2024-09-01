@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Layout from '../../components/Layout';
 
-import ReviewSwiper from "@/components/ReviewSwiper";
+import ReviewSwiper from "@/components/libs/ReviewSwiper";
 
 const AboutUsPage = () => {
     return (

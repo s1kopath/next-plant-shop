@@ -1538,7 +1538,7 @@ main {
   background: #fff;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   padding: 2.3125rem 2.3125rem 1.25rem 2.3125rem;
 }
 .category-inner .category-inner-cart figure .category-img {
@@ -1971,8 +1971,8 @@ main {
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: end;
-  justify-content: end;
+  align-items: flex-end;
+  justify-content: flex-end;
   gap: 8.125rem;
 }
 .hero2-inner-right-content {
@@ -3390,7 +3390,7 @@ main {
 }
 .cart-section-inner .cart-details .delete-btn-inner {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .cart-section-inner .cart-details .delete-btn-inner .delate-btn {
   border-radius: 0.25rem;
@@ -3561,7 +3561,7 @@ main {
 }
 .favorite-section-inner .favorite-details .delete-btn-inner {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .favorite-section-inner .favorite-details .delete-btn-inner .delate-btn {
   border-radius: 0.25rem;
@@ -4568,7 +4568,7 @@ main {
 }
 @media screen and (min-width: 36rem) {
   .pagination-items {
-    justify-content: end;
+    justify-content: flex-end;
   }
 }
 .pagination-items .pagination-body {
